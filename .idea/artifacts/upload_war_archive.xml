@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="upload:war archive">
+    <output-path>$PROJECT_DIR$/out/artifacts/upload_war_archive</output-path>
+    <root id="archive" name="upload.war">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/web/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="upload" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="sqlite-jdbc-3.8.7" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="upload/web/Web" />
+    </root>
+  </artifact>
+</component>
